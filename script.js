@@ -10,7 +10,7 @@ function setStatus(message, isError = false) {
   statusEl.classList.toggle("error", isError);
 }
 
-// Check Clipboard API support
+
 if (!navigator.clipboard) {
   setStatus("Clipboard API not supported in this browser.", true);
   copyBtn.disabled = true;
@@ -47,7 +47,7 @@ pasteBtn.addEventListener("click", async () => {
       return;
     }
 
-    // Replace textarea content with clipboard content
+
     textArea.value = clipText;
     setStatus("Pasted from clipboard ✅");
   } catch (err) {
