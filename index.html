@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Copy-Paste Helper | Clipboard API Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Copy–Paste Helper</h1>
+    <p class="subtitle">
+      A tiny app using the <strong>Clipboard API</strong>.<br />
+      Type something, then use the buttons to copy and paste.
+    </p>
+
+    <label for="text-input" class="label">Your Text</label>
+    <textarea
+      id="text-input"
+      rows="6"
+      placeholder="Type something here..."
+    ></textarea>
+
+    <div class="buttons">
+      <button id="copy-btn">Copy Text</button>
+      <button id="paste-btn">Paste Text</button>
+    </div>
+
+    <p id="status" class="status">Status: Ready</p>
+
+    <div class="info">
+      <h2>What this demo shows</h2>
+      <ul>
+        <li>Reading & writing clipboard using <code>navigator.clipboard</code></li>
+        <li>Working with <code>textarea.value</code></li>
+        <li>Basic error handling when permissions are blocked</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
